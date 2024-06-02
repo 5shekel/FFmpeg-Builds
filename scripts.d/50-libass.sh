@@ -15,6 +15,7 @@ ffbuild_dockerbuild() {
         --disable-shared
         --enable-static
         --with-pic
+        --enable-wrap-unicode  # Enable ASS_FEATURE_WRAP_UNICODE
     )
 
     if [[ $TARGET == win* || $TARGET == linux* ]]; then
